@@ -179,4 +179,4 @@ ctx.close_path()
 ctx.fill()
 
 
-surface.write_to_png('church.png')
+surface.write_to_png('chapel.png')

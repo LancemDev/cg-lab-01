@@ -186,4 +186,4 @@ ctx.fill_preserve()
 ctx.stroke()
 
 
-surface.write_to_png('church.png')
+surface.write_to_png('chapel.png')

@@ -8,6 +8,31 @@ ctx.paint()
 
 ctx.set_line_width(2)
 
+# The part below the cross
+ctx.move_to(180, 90)
+ctx.line_to(210, 90)
+ctx.line_to(200, 50)
+ctx.line_to(190, 50)
+ctx.set_source_rgb(0, 0, 0)
+ctx.fill()
+
+# Joinin the two parts
+ctx.move_to(190, 50)
+ctx.line_to(200, 50)
+ctx.line_to(195, 40)
+ctx.line_to(190, 50)
+ctx.set_source_rgb(0, 0, 0)
+ctx.fill()
+
+# The cross
+ctx.move_to(195, 50)
+ctx.line_to(195, 15)
+ctx.move_to(185, 25)
+ctx.line_to(205, 25)
+ctx.set_source_rgb(0, 0, 0)
+ctx.set_line_width(5)
+ctx.stroke()
+
 # Structure of center block
 ctx.move_to(130, 170)
 ctx.line_to(130, 270)

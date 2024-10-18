@@ -8,6 +8,7 @@ ctx.paint()
 
 ctx.set_line_width(2)
 
+# Structure of center block
 ctx.move_to(130, 170)
 ctx.line_to(130, 270)
 ctx.line_to(260, 270)
@@ -20,6 +21,7 @@ ctx.fill_preserve()
 ctx.set_source_rgb(1,1,1)
 ctx.stroke()
 
+# Structure of center roof
 ctx.move_to(120, 180)
 ctx.line_to(150, 160)
 ctx.line_to(240, 160)
@@ -34,16 +36,40 @@ ctx.fill_preserve()
 ctx.set_source_rgb(1,1,1)
 ctx.stroke()
 
-ctx.rectangle(200, 220, 30, 50)
-ctx.rectangle(160, 220, 30, 50)
-ctx.fill()
-
-ctx.arc(195, 185, 15, math.radians(0), math.radians(360))
+# Center block window
+ctx.arc(195, 175, 10, math.radians(0), math.radians(360))
 ctx.set_source_rgb(1,1,1)
 ctx.fill()
 
-ctx.arc(190, 230, 30, math.radians(180), math.radians(270))
+# Roof above the door
+ctx.move_to(150, 220)
+ctx.line_to(195, 200)
+ctx.line_to(240, 220)
+ctx.line_to(240, 210)
+ctx.line_to(195, 190)
+ctx.line_to(150, 210)
+ctx.close_path()
+ctx.set_source_rgb(0,0,0)
+ctx.fill_preserve()
 ctx.set_source_rgb(1,1,1)
+ctx.stroke()
+
+# Doors
+ctx.rectangle(160, 220, 34, 47)
+ctx.rectangle(196, 220, 34, 47)
+ctx.fill()
+
+
+ctx.move_to(160, 220)
+ctx.curve_to(170, 210, 180, 210, 194, 210)
+ctx.line_to(194, 220)
+ctx.close_path()
+ctx.fill()
+
+ctx.move_to(196, 210)
+ctx.curve_to(210, 210, 220, 210, 229, 220)
+ctx.line_to(196, 220)
+ctx.close_path()
 ctx.fill()
 
 

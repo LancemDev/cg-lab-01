@@ -185,5 +185,15 @@ ctx.set_line_width(1)
 ctx.fill_preserve()
 ctx.stroke()
 
+ctx.move_to(180, 120)  
+ctx.line_to(180, 147)  
+ctx.line_to(210, 147)  
+ctx.line_to(210, 120)  
+ctx.arc(195, 120, 15, math.pi, 0) 
+ctx.set_source_rgb(1, 1, 1 )  
+ctx.set_line_width(1)
+ctx.fill_preserve()  
+ctx.stroke()
+
 
 surface.write_to_png('chapel.png')

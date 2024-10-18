@@ -35,7 +35,10 @@ ctx.stroke()
 # the bar below the cross
 ctx.rectangle(160, 91, 70, 9)
 ctx.set_source_rgb(0, 0, 0)
-ctx.fill()
+ctx.fill_preserve()
+ctx.set_source_rgb(1, 1, 1)
+ctx.stroke()
+
 
 #Shell
 #side rects
@@ -43,13 +46,11 @@ ctx.rectangle(50, 220, 80, 40)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill_preserve()
 ctx.set_source_rgb(1, 1, 1)
-ctx.set_line_width(3)
 ctx.stroke()
 ctx.rectangle(260, 220, 80, 40)
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill_preserve()
 ctx.set_source_rgb(1, 1, 1)
-ctx.set_line_width(3)
 ctx.stroke()
 
 #small white
@@ -75,7 +76,6 @@ ctx.close_path()
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill_preserve()
 ctx.set_source_rgb(1, 1, 1)
-ctx.set_line_width(1)
 ctx.stroke()
 
 ctx.move_to(260, 190)
@@ -86,7 +86,6 @@ ctx.close_path()
 ctx.set_source_rgb(0, 0, 0)
 ctx.fill_preserve()
 ctx.set_source_rgb(1, 1, 1)
-ctx.set_line_width(1)
 ctx.stroke()
 
 #Center

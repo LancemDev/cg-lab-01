@@ -178,5 +178,12 @@ ctx.line_to(196, 220)
 ctx.close_path()
 ctx.fill()
 
+# Top part
+ctx.rectangle(170, 100, 50, 50)
+ctx.set_source_rgb(0, 0, 0)
+ctx.set_line_width(1)
+ctx.fill_preserve()
+ctx.stroke()
 
-surface.write_to_png('chapel.png')
+
+surface.write_to_png('church.png')

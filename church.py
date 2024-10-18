@@ -30,7 +30,6 @@ ctx.line_to(195, 15)
 ctx.move_to(185, 25)
 ctx.line_to(205, 25)
 ctx.set_source_rgb(0, 0, 0)
-ctx.set_line_width(5)
 ctx.stroke()
 
 # the bar below the cross

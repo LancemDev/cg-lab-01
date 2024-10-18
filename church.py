@@ -33,6 +33,11 @@ ctx.set_source_rgb(0, 0, 0)
 ctx.set_line_width(5)
 ctx.stroke()
 
+# the bar below the cross
+ctx.rectangle(160, 91, 70, 9)
+ctx.set_source_rgb(0, 0, 0)
+ctx.fill()
+
 # Structure of center block
 ctx.move_to(130, 170)
 ctx.line_to(130, 270)
